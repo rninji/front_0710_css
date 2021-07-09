@@ -1,0 +1,254 @@
+:root {
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --accent-color: rgb(142, 121, 219);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+@font-face {
+  font-family: "KyoboHand";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  font-family: "Cafe24SsurroundAir";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-header {
+  margin: 10px 0 30px 0;
+}
+
+/* #navbar {
+  background-color: var(--accent-color);
+} */
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  font-family: "NEXON Lv1 Gothic OTF";
+  display: inline;
+  padding-right: 10px;
+}
+
+#navbar a {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  color: var(--accent-color);
+}
+
+#showcase {
+  background-position: center right;
+  min-height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#showcase-text {
+  width: 45%;
+  height: 600px;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+#showcase-img {
+  width: 45%;
+  height: 600px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#showcase-img img {
+  position: relative;
+  right: 200px;
+}
+
+#showcase h1 {
+  font-family: "KyoboHand";
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase h4 {
+  color: #999;
+  font-size: 14px;
+  padding: 0;
+}
+
+#about {
+  margin: 50px 0;
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background: var(--accent-color);
+  color: #fff;
+  margin-top: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    float: none;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+
+.post {
+  width: 100%;
+  height: 600px;
+  margin: 50px 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#post1 {
+  background: linear-gradient(
+      338.83deg,
+      #f8c6ff -3.41%,
+      rgba(255, 196, 255, 0) 52.31%
+    ),
+    #ffeec4;
+  color: var(--text-color);
+}
+
+#post2 {
+  background: linear-gradient(
+      39.4deg,
+      #b6a0ea -2.55%,
+      rgba(182, 160, 234, 0) 45.21%
+    ),
+    #f1ebff;
+  color: #444;
+}
+
+#post3 {
+  background: linear-gradient(
+      180.14deg,
+      #142c69 0.12%,
+      rgba(20, 44, 105, 0) 62.01%
+    ),
+    #008081;
+  color: seashell;
+}
+
+.post-content {
+  width: 90%;
+  height: 90%;
+  text-align: right;
+  font-size: 25px;
+  font-family: "yg-jalnan";
+  overflow: hidden;
+}
+
+.post-content span {
+  display: block;
+}
+
+.post-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#post1 .post-img {
+  padding-top: 70px;
+}
+
+.post-img img {
+  max-width: 60%;
+  height: auto;
+}
